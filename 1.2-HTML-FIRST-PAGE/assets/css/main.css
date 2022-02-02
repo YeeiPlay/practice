@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.topbar {
+  background-color: lightgray;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  background-color: rgb(49, 233, 24);
+  justify-content: space-between;
+  width: 900px;
+}
+
+.nav__list {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  height: 100%;
+}
+
+.nav__item {
+    list-style: none;
+}

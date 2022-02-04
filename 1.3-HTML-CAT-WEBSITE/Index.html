@@ -4,14 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="./assets/css/main.css" />
+    <!-- <link rel="stylesheet" media="screen and (min-width: 900px)" href="widescreen.css"> -->
+    <!-- <link rel="stylesheet" media="screen and (max-width: 600px)" href="smallscreen.css"> -->
     <title>Funniest Videos</title>
   </head>
-
+  <!-- still do not know how to make the search bar work so it does not do anything-->
   <body>
     <header class="container">
       <div class="wrapper">
-        <h1 class="logo__text">Funniest Videos</h1>
+        <h1>Funniest Videos</h1>
+
         <div class="searchwrapper">
           <input
             type="text"
@@ -20,22 +25,29 @@
             placeholder="Type to Search"
           />
         </div>
-        <ul class="barmenu">
-          <li>Home</li>
-          <li>Contact us</li>
-          <li>About us</li>
-        </ul>
-
-        <!-- still do not know how to make it work so that it is working on a real search engine -->
+        <!--I wanted to find a solution to add icons to class barmenu, and i did it using css to add icons by linking another css link to the <head> element called font awesome..
+        --This code bellow adds my icons and it's responsive as well! 
+        also did alittle thing myself maybe its super wrong but when pages shrinks the menu will disappear and an icon will appear instead
+        and pfcourse the icon does not work as i have no CLUE how to code such thing?? at least i want it to activate when you HOVER on top of it or you click it but can't figure it out-->
+        <!-- also decided to remove the word "us" from the menu, so instead of the old "contact us" we now have a cleaner look without "us" 
+          we simply have "contact & about"-->
+        <div class="barmenu">
+          <div class="menu-icon">
+            <a href="#"><i class="fa fa-pencil-square-o"></i></a>
+          </div>
+          <a href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+          <a href="#"><i class="fa fa-pencil-square-o"></i> Contact</a>
+          <a href="#"><i class="fa fa-fw fa-user"></i> About</a>
+        </div>
       </div>
     </header>
 
+    
     <div class="center-all">
       <h2>
         <strong>Let's start with <em>Cat videos</em> because why not?</strong>
       </h2>
-      <br />
-
+      <br>
       <p>
         Ducimus natus quod quas, velit facere eaque expedita corrupti pariatur,
         doloremque adipisci consequatur magni nulla? Nostrum sunt nihil
@@ -45,72 +57,71 @@
         ratione debitis vel asperiores veritatis architecto quos vero sapiente
         ipsam, tempore dolores eligendi cupiditate?
       </p>
-      <br /><br />
-
+      <br><br>
+      
+      <!-- target="_blank" will open link on a new tab or window, all links point to youtube-->
+    <div class="cat-img">
       <ol>
         <h3><strong>Our Top 9 Cat Videos</strong></h3>
-        <br />
+      <br>
         <li>
           <a href="https://youtu.be/ryG9Oo0_Q7s" target="_blank"
-            >Kitten fights with cleaning robot</a
+          >Kitten fights with cleaning robot</a
           >
         </li>
-
         <li>
           <a href="https://youtu.be/p1lbTS43A1U" target="_blank"
-            >Goalkeeper Cat and his best saves</a
+          >Goalkeeper Cat  best saves</a
           >
         </li>
-
         <li>
           <a href="https://youtu.be/v-6Ljyp3HuQ" target="_blank"
-            >Impossible saves in Slow Motion</a
+          >Impossible saves, slow Motion</a
           >
         </li>
       </ol>
-      <!-- target="_blank" will open link on a new tab or window, all links point to youtube-->
 
-      <ol start="4">
+      <ol start="4"><br><br>
         <li>
           <a href="https://www.youtube.com/watch?v=8xQlgKTEOH8" target="_blank"
-            >Try to stay serious with this video</a
+          >Stay serious with this video</a
           >
         </li>
-
         <li>
           <a href="https://www.youtube.com/watch?v=IDxiucO77iY" target="_blank"
-            >Start your December with the best cats</a
+          >December with the best cats</a
           >
         </li>
-
+        
         <li>
-          <a href="https://www.youtube.com/watch?v=icos5tEBrok" target="_blank"
-            >Funny Cat Videos to Keep You Smiling!</a
+          <a 
+          href="https://www.youtube.com/watch?v=icos5tEBrok" target="_blank">Smile with Funny Cat Videos!
+          
+        </a>
+      </li>
+    </ol>
+    
+    <ol start="7"><br><br>
+      <li>
+        <a href="https://www.youtube.com/watch?v=tpiyEe_CqB4" target="_blank">This video is so cute and funny!</a
           >
+        </li>
+        
+        <li>
+          <a href="https://www.youtube.com/watch?v=6IjYegMoyqs" target="_blank">November 2020 cats by Rufus
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://www.youtube.com/watch?v=4vQjPmy6m0c" target="_blank">Fun with cats and dogs in LA
+          </a>
         </li>
       </ol>
-
-      <ol start="7">
-        <li>
-          <a href="https://www.youtube.com/watch?v=tpiyEe_CqB4" target="_blank"
-            >This video is so cute and funny!</a
-          >
-        </li>
-
-        <li>
-          <a href="https://www.youtube.com/watch?v=6IjYegMoyqs" target="_blank"
-            >November 2020 cats by Rufus</a
-          >
-        </li>
-
-        <li>
-          <a href="https://www.youtube.com/watch?v=4vQjPmy6m0c" target="_blank"
-            >Fun with cats and dogs in LA</a
-          >
-        </li>
-      </ol>
-      <br />
-
+          <img src="assets\img\Cat-transparent.png"alt="cat laying down"/>
+      </div>
+      
+      <br>
+      
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
         consequuntur natus. Distinctio odio placeat explicabo quo eaque, dolor
@@ -123,42 +134,62 @@
         repellat cum enim porro expedita laudantium. Labore voluptates ipsam
         officia consequatur amet rem adipisci at nostrum, et blanditiis?
       </p>
-
-      <br /><br />
-
+      
+      <br><br>
+      
       <h5>More Videos:</h5>
-      <br /><br />
-
-      <img
-        class="catimg1__img1"
-        src="assets\img\Cat-transparent.png"
-        alt="cat laying down"
-      />
-
-      <table style="font-size: 14px">
-        <tr>
-          <th style="position: absolute; left: 5px; bottom: 385px">
-            Cats vs dogs
-          </th>
-          <th style="position: absolute; left: 150px; bottom: 385px">
-            Playing instruments
-          </th>
-        </tr>
-
-        <tr>
-          <td style="padding: 2px">
-            <a
+      
+      <br><br>
+      
+      
+      <div class="container-2">
+        
+        
+        
+        <table>
+          <img src="assets\img\ad-200x200.jpg"width="200"height="200"alt="your add here place holder image"/> 
+          <tr>
+            <th>Cats vs dogs</th>
+            <th>Playing instruments</th>
+          </tr>
+          <tr>
+            <td>
+              <a
               href="https://www.youtube.com/watch?v=e8QtsyNXvFg"
-              target="_blank"
-              >Obstacle levels</a
+            target="_blank">Obstacle levels
+          </a>
+        </td>
+        <td>
+          <a
+          href="https://www.youtube.com/watch?v=Vi33DpZ7CLA"
+          target="_blank">Cat playing band
+        </a>
+      </td>
+      </tr>
+    
+      <tr>
+         <td>
+             <a href="https://www.youtube.com/watch?v=BPW1Xdc4v4s"
+             target="_blank"style="padding: 3px">Funny Dogs,Cats</a>
+         </td>
+         <td>
+        <a href="https://www.youtube.com/watch?v=e8QtsyNXvFg"
+          target="_blank">Obstacle Challenge</a>
+        </td>
+        </tr>
+        <tr>
+          <td>
+            <a
+            href="https://www.youtube.com/watch?v=l4FZnAYzD8Y"
+            target="_blank">Try Not To Laught
+            </a
             >
           </td>
-          <td style="padding: 2px; position: absolute; left: 150px">
+          <td>
             <a
-              href="https://www.youtube.com/watch?v=Vi33DpZ7CLA"
-              target="_blank"
-            >
-              Cat playing band</a
+            href="https://www.youtube.com/watch?v=h5FFp8oBRnY"
+            target="_blank"
+            >Trained Cats</a
             >
           </td>
         </tr>
@@ -166,96 +197,57 @@
         <tr>
           <td>
             <a
-              href="https://www.youtube.com/watch?v=BPW1Xdc4v4s"
-              target="_blank"
-              style="padding: 3px"
-              >Funny Dogs,Cats</a
-            >
-          </td>
-          <td style="padding: 2px; position: absolute; left: 146px">
-            <a
-              href="https://www.youtube.com/watch?v=e8QtsyNXvFg"
-              target="_blank"
-              style="padding: 3px"
-              >Obstacle Challenge</a
-            >
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a
-              href="https://www.youtube.com/watch?v=l4FZnAYzD8Y"
-              target="_blank"
-              >Try Not To Laught</a
-            >
-          </td>
-          <td style="padding: 2px; position: absolute; left: 149px">
-            <a
-              href="https://www.youtube.com/watch?v=h5FFp8oBRnY"
-              target="_blank"
-              >Trained Cats</a
-            >
-          </td>
-        </tr>
+            href="https://www.youtube.com/watch?v=0Zcvbc8E6wQ"
+            target="_blank">try to stay serious
+          </a>
+        </td>
+        <td>
+          <a href="https://www.youtube.com/watch?v=J---aiyznGQ"target="_blank">Charlie Schmidt's Keyboard Cat
+        </a>
+        </td>
+      </tr>
+      
+            </table>
+ </div>
+<br><br><br><br><br>
+<hr>
+<br><br>
 
-        <tr>
-          <td>
-            <a
-              href="https://www.youtube.com/watch?v=0Zcvbc8E6wQ"
-              target="_blank"
-              >try to stay serious</a
-            >
-          </td>
-          <td style="padding: 2px; position: absolute; left: 150px">
-            <a
-              href="https://www.youtube.com/watch?v=J---aiyznGQ"
-              target="_blank"
-              >Charlie Schmidt's Keyboard Cat</a
-            >
-          </td>
-        </tr>
-      </table>
+<div class="img-bottom">
+  <img
+  src="C:\Users\lion1\Desktop\Practice Projects\practice\1.1-HTML-PRACTICE-ONLY\assets\img\Layer 1.png"
+  alt="Image of a cat"
+  />
+  <img
+  src="C:\Users\lion1\Desktop\Practice Projects\practice\1.1-HTML-PRACTICE-ONLY\assets\img\Layer 2.png"
+  alt="image of a cat"
+  />
+  <img
+  src="C:\Users\lion1\Desktop\Practice Projects\practice\1.1-HTML-PRACTICE-ONLY\assets\img\Layer 3.png"
+  alt="image of a cat and woman"
+  />
+  <img
+  src="C:\Users\lion1\Desktop\Practice Projects\practice\1.1-HTML-PRACTICE-ONLY\assets\img\Layer 4.jpg"
+  alt="image of a cat"
+  />
+</div>
 
-      <br /><br /><br />
-      <hr />
-      <br /><br />
-      <div class="img-bottom">
-        <img
-          src="C:\Users\lion1\Desktop\Practice Projects\practice\1.1-HTML-PRACTICE-ONLY\assets\img\Layer 1.png"
-          alt="Image of a cat"
-        />
-        <img
-          src="C:\Users\lion1\Desktop\Practice Projects\practice\1.1-HTML-PRACTICE-ONLY\assets\img\Layer 2.png"
-          alt="image of a cat"
-        />
-        <img
-          src="C:\Users\lion1\Desktop\Practice Projects\practice\1.1-HTML-PRACTICE-ONLY\assets\img\Layer 3.png"
-          alt="image of a cat and woman"
-        />
-        <img
-          src="C:\Users\lion1\Desktop\Practice Projects\practice\1.1-HTML-PRACTICE-ONLY\assets\img\Layer 4.jpg"
-          alt="image of a cat"
-        />
-      </div>
-
-      <br /><br />
-      <!--I need to figure out a way to have this input data sent to an email address 
-            or somewhere where i can receive it from the user-->
-
+<br><br>
+<!--I need to figure out a way to have this input data sent to an email address 
+  or somewhere where i can receive it from the user-->
+    <div class="center-all">
       <h2>Share a video with Us!</h2>
-      <br />
+      <br>
       <p>
         Share your favorite videos with us by sending your video link bellow.
       </p>
-      <br />
-      <input type="text" placeholder="Type Your Link" />
-      <input type="submit" /> <br /><br />
 
-      <p>Contact us:</p>
+      <br>
+      <input type="text" placeholder="Type Your Link"/>
+      <input type="submit"/> 
+          
+      <br><br>
 
-      <address>
-        <a href="mailto:johndoe@practice.com">johndoe@practice.com</a><br />
-      </address>
-    </div>
+  </div>
   </body>
 </html>

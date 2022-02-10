@@ -4,23 +4,15 @@
   box-sizing: border-box;
 }
 /* Practicing variables in css, still learning */
-/* added some padding to the body tag, it did not look right when window was smaller */
-
 :root {
-  --darkmode-3: #140522d5;  
-  --darkmodelite: #111111;
-  --darkmode1: #404040;
+  --darkmode-3: #140522d5; 
+  --greydark: #555555;
   --darkmode2: #1f1f1f;
   --darkmode4: #050505;
-  --white-07: hsla(0, 0%, 100%, 0.7);
-  --lite-gray: hsl(0, 1%, 36%);
-  --blue-lite: #ecf2f8;
   --dark-mode: #121212;
-  --blue-2: hsl(219, 29%, 14%);
   --violet: hsl(303, 96%, 30%);
   --white-05: hsla(0, 0%, 100%, 0.5);
-  --white: hsl(0, 0%, 100%); 
-  --white-nightmode: rgb(223, 223, 223);   
+  --white-nightmode: rgb(204, 203, 203);   
 }
 
 body {
@@ -29,46 +21,39 @@ body {
   background-color: var(--darkmode4);
   width: auto;
   font-size: 14px;
-  
 }
 
 
 .container {
   background-color: var(--dark-mode);
   gap: 5px;
-  margin: 30px 500px 30px 500px;
+  margin: auto;
+  flex-wrap: wrap;
+  width: fit-content;
 }
 
-.column5 {
+.columns__wrapper1 {
   display: flex;
-  justify-content: space-between;
-  padding: 30px 20px 0px 600px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: var(--darkmode4);
+  line-height: 150px;
 }
-
-.column-5child1 {
- flex: auto;
-}
-.column-5child2 {
-  flex: auto;
-  padding: 5px 20px 0px 50px;
-
+.columns__wrapper4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-spacing: 2px;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 0px 0px 20px 0px;
 }
 
 .summitbutton {
  display: flex;
  justify-content: center;
  padding: 40px;
-}
-
-.p2 {
-  display: flex;
-  justify-content: center;
-  align-self: center;
-}
-
-span {
-  /* this controls the "logo" color. in my case its a text logo "funniest" */
-  color: var(--lite-gray); 
 }
 
 a {
@@ -87,11 +72,12 @@ a {
 }
 .table {
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  padding-right: 10%;
-  padding-left: 5%;
-  align-self: center;
+  flex-wrap: wrap;
+  gap: 162px;
+  padding-top: 45px;
+  line-height: 18px;
 }
 
 #top9videos {
@@ -103,33 +89,11 @@ a {
   background-color: var(--dark-mode);
 }
 
-.row-1 {
-  /* This row-1 code controls the ol element section the site (top 9 cat videos)  */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-left: 200px;
-  line-height: 20px;
-  flex-flow: row;
-  color: var(--white-nightmode)
-}
-
-.row-child2 {
-  flex: auto;
-  padding: 0px 100px 0px 100px;
-
-}
-.row-child3 {
-  flex: auto;
-  padding-right: 200px;
-
-}
-
 .singlecat img {
   /* controls properties for the Cat image itself*/
   display: flex;
-  justify-content: space-between;
-  align-self: center;
+  justify-content: center;
+  flex-wrap: wrap;
   filter: brightness(.9) contrast(1.2);
 }
 .singlecat {
@@ -137,10 +101,8 @@ a {
   also parent flex of table bellow*/
   background-color: var(--white-nightmode);
   display: flex;
-  justify-content: space-between;
-  gap: 10px; 
-
-  
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .table2 th {
@@ -153,14 +115,30 @@ a {
 
 .table2 {
   /* this is a child of the flex property from the cat image's "older movies" table part  */
-  line-height: 16px;
-  padding: 20px;
-  justify-self: center;
-  align-self: center;
-  color: #050505;
-  
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 40px;
+  justify-content: center;
+  gap: 130px;
 }
 
+.column-5child2 {
+  padding-left: 20px;
+}
+.column-5child1 {
+  padding-left: 20px;
+}
+
+.wrapper span {
+  padding-left: 60px;
+  color: var(--greydark);
+  font-size: larger;
+}
+.wrapper h2 {
+  padding-right: 100px;
+  gap: 10px;
+}
 .wrapper {
   /* this .wrapper class is controlling my navmenu "barmenu" and logo */
   background-color: var(--darkmode-3);
@@ -169,18 +147,18 @@ a {
   justify-content: space-between;
   justify-content: flex-start;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
   color: white;
   width: 100vw;
-  padding: 24px 100px;
-  
+  padding: 50px 0;
+  flex-wrap: wrap;
+  margin: auto;
 }
 
 .searchwrapper {
-  width: 900px;
-  padding: 0px 200px 0px 0px; 
-  display: flex;
-  justify-content: center;
+  padding: 0px 280px 0px 50px; 
+  flex-wrap: wrap;
+  margin: auto;
 }
 
 .searchbar {
@@ -188,33 +166,37 @@ a {
   height: 35px;
   padding: 20px 20px;
   border-radius: 10px;
+  width: 400px;
+}
+
+.barmenu {
+  color: white;
+  font-size: 16px;
+  margin: auto;
+  word-spacing: 7px;
+  font-size: 18px;
+  letter-spacing: 2px;
 }
 
 .barmenu a {
   color: white;
   list-style: none;
-}
-
-
-.barmenu {
-  display: flex;
-  justify-content: right;
-  gap: 20px;
-  font-size: 18px;
-  padding: 0px 0px 0px 400px;
+  font-size: 16px;
 }
 
 /* added a subtle hover effect looks nice */
 .barmenu a:hover {
-  background-color: var(--darkmode2)
+  background-color: var(--white-nightmode);
+  border-radius: 50px;
 }
 
 .img-bottom {
   filter: brightness(.8) contrast(1.2);
-  gap: 28px;
+  gap: 25px;
   display: flex;
   justify-content: center;
-
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .submit {
@@ -234,15 +216,7 @@ a {
 
 footer {
   padding: 50px 0px 50px 0px;
+  margin-top: 50px;
 }
 
-@media (max-width: 950px) {
-  .container  {
-    flex-direction: column;
-  }
-}
-@media (max-width: 950px) {
-  .img-bottom  {
-    flex-direction: column;
-  }
-}
+

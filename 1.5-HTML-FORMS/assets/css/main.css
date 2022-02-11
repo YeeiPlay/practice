@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form__aside div h1 {
+    color: rgba(255, 255, 255, 0.993);
+    font-weight: bold;
+}
+
+.form__aside div {
+    padding-bottom: 55px;
+}
+.form__aside div h3 {
+    color: rgba(255, 255, 255, 0.685);
+}
+
+
+.form__aside {
+    display: flex;
+    align-items: flex-end;
+    grid-area: aside;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(3, 3, 3, 0.3)), url(../img/pic-form.jpg);
+    background-position: center;
+    background-size: cover;
+    filter: brightness(.7) contrast(1.2);
+    background-blend-mode: multiply;
+    color: rgb(255, 255, 255,);
+}
+
+.form__form {
+    grid-area: form;
+}
+
+.form__aside, .form__form {
+    padding: 34px 28px;
+}
+.form__element {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form__element input {
+    border: 1px solid #dfe4ea;
+    padding: 16px;
+    border-radius: 6px;
+
+}
+.form__element label {
+    font-size: 16px;
+    padding-bottom: 8px;
+    color: #646464;
+}
+
+.check-group {
+    flex-direction: row-reverse;
+    gap: 8px;
+    justify-content: start;
+    align-items: baseline;
+}
+
+.form {
+    display: grid;
+    grid-template-areas: 
+    "aside form";
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(241, 241, 241);
+    width: 900px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 50px rgb(141, 141, 141);
+    margin: 20px;
+}
+
+.form__form button:hover {
+    background-color: rgba(112, 161, 255,1.92)
+}
+.form__form button {
+    padding: 14px 26px;
+    background-color: #3668f0;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+}
+
+@media only screen and (max-width: 800px) {
+    .form__form button {
+        width: 100%;
+    }
+
+    .form {
+        grid-template-areas: 
+        "aside"
+        "form"; 
+        grid-template-columns: 1fr;
+        margin: 15px;
+        
+    }
+
+    .form__aside {
+        justify-content: center;
+    }
+    
+    .form__aside div h1, .form__aside div h3 {
+        text-align: center;
+    }
+
+    .form__form button {
+        padding: 20px 26px;
+    }
+}
+
+
+

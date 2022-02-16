@@ -63,11 +63,13 @@ body {
     color: #646464;
 }
 
+    /* added -webkit-box vendor pre-fix for safari browser, check mark box should now align at the baseline */
 .check-group {
     flex-direction: row-reverse;
     gap: 8px;
     justify-content: start;
     align-items: baseline;
+    -webkit-box-align: baseline;
 }
 
 .form {

@@ -3,57 +3,84 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* Practicing variables in css, still learning */
+
 :root {
   --darkmode-3: #140522d5; 
   --greydark: #555555;
   --darkmode2: #1f1f1f;
-  --darkmode4: #050505;
-  --dark-mode: #121212;
-  --violet: hsl(303, 96%, 30%);
-  --white-05: hsla(0, 0%, 100%, 0.5);
-  --white-nightmode: rgb(204, 203, 203);   
+  --Midnite_blue: rgb(10, 10, 36);
+  --midnite_blue_lite: #1e2830;
+  --dark_purple: #6c5ce7;
+  --white-05: hsl(0, 0%, 87%);
+  --white-nightmode: rgb(228, 228, 228);   
+  --american_river: rgb(31, 22, 53);
 }
 
 body {
   color: var(--white-nightmode);
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: var(--darkmode4);
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--Midnite_blue);
   width: auto;
   font-size: 14px;
 }
 
-
 .container {
-  background-color: var(--dark-mode);
+  background-color: var(--midnite_blue_lite);
   gap: 5px;
   margin: auto;
-  flex-wrap: wrap;
   width: fit-content;
-}
+  border-radius: 10px; 
+  box-shadow: 0 0 10px 15px rgba(0, 0, 0, 0.13);
+ }
 
 .columns__wrapper1 {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  background-color: var(--darkmode4);
-  line-height: 150px;
+  line-height: 120px;
+  margin-top: 0px;
+  border-radius: 10px;
 }
+
 .columns__wrapper4 {
   display: flex;
   justify-content: center;
   align-items: center;
   word-spacing: 2px;
-  gap: 30px;
+  gap: 35px;
   flex-wrap: wrap;
-  padding: 0px 0px 20px 0px;
+  padding: 25px 20px;
 }
 
-.summitbutton {
+.input__wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: 20px;
+  padding-left: 14px;
+  padding-bottom: 50px;
+  filter: brightness(0.9) contrast(1.2);
+}
+
+.input__text input {
+ padding: 7px 70px;
+ border-radius: 12px;
+}
+
+.input__button input {
+ 
+ justify-self: center;
+ border-radius: 12px;
+ width: 120px;
+ height: 40px;
+}
+
+.input__text {
  display: flex;
  justify-content: center;
- padding: 40px;
+ padding-top: 50px;
+ padding-left: 40px;
 }
 
 a {
@@ -65,48 +92,49 @@ a {
   display: flex;
   justify-content: space-between;
 }
+
 .table th {
   display: flex;
   padding: 10px;
   justify-items: normal;
+  background-color: rgba(110, 110, 110, 0.13);
 }
+
+  /* place your add here section bellow */
 .table {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 162px;
+  gap: 180px;
   padding-top: 45px;
+  padding-bottom: 100px;
   line-height: 18px;
+  
 }
 
 #top9videos {
   /* this id number controls the "ourtop9videos" h3 tag */
   color: var(--white-nightmode);
-  display: flex;
-  justify-content: center;
+  text-align: center;
   padding: 18px;
-  background-color: var(--dark-mode);
+  background-color: rgba(73, 4, 100, 0.267);
+  flex-wrap: wrap;
 }
 
-.singlecat img {
-  /* controls properties for the Cat image itself*/
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  filter: brightness(.9) contrast(1.2);
+.singlecat img{
+  height: 100px;
 }
+
 .singlecat {
-  /* controls properties for the Cat image laying dowm part 
-  also parent flex of table bellow*/
-  background-color: var(--white-nightmode);
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  padding-top: 80px;
+  filter: brightness(.6) contrast(1.2);
 }
 
 .table2 th {
-  /* this is a child of the flex property from the cat image's table th part  */
   display: flex;
   justify-content: center;
   align-content: center;
@@ -123,11 +151,13 @@ a {
   gap: 130px;
 }
 
-.column-5child2 {
-  padding-left: 20px;
+.column5__h3 {
+  padding-left: 50px;
+  
 }
-.column-5child1 {
-  padding-left: 20px;
+.column5__h2 {
+  padding-left: 50px;
+
 }
 
 .wrapper span {
@@ -141,16 +171,14 @@ a {
 }
 .wrapper {
   /* this .wrapper class is controlling my navmenu "barmenu" and logo */
-  background-color: var(--darkmode-3);
+  background-color: var(--american_river);
   background-size: 100vw;
   display: flex;
-  justify-content: space-between;
-  justify-content: flex-start;
   align-items: center;
   gap: 10px;
   color: white;
   width: 100vw;
-  padding: 50px 0;
+  padding: 45px 2px;
   flex-wrap: wrap;
   margin: auto;
 }
@@ -167,43 +195,48 @@ a {
   padding: 20px 20px;
   border-radius: 10px;
   width: 400px;
+  filter: brightness(0.8) contrast(1.2);
 }
 
 .barmenu {
   color: white;
   font-size: 16px;
-  margin: auto;
-  word-spacing: 7px;
+  letter-spacing: 3px;
   font-size: 18px;
-  letter-spacing: 2px;
+  padding: 2px 30px;
 }
 
 .barmenu a {
   color: white;
   list-style: none;
   font-size: 16px;
+  filter: brightness(0.7) contrast(1.2);
 }
 
 /* added a subtle hover effect looks nice */
 .barmenu a:hover {
-  background-color: var(--white-nightmode);
+  background-color: rgba(251, 251, 251, 0.671);
   border-radius: 50px;
 }
 
-.img-bottom {
-  filter: brightness(.8) contrast(1.2);
-  gap: 25px;
-  display: flex;
+.images__row img {
+  filter: brightness(0.7) contrast(1.2);
+
+}
+
+.images__row {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  padding: 60px 50px;
 }
 
-.submit {
+.submit-button input {
   display: flex;
   justify-content: center;
-  width: 50px;
+  width: 70px;
   border-radius: 10%;
+  height: 28px;
 }
 
 .footer {
@@ -211,12 +244,74 @@ a {
   justify-content: center;
   font-size: smaller;
   color: var(--white-nightmode);
-  background-color: var(--darkmode-3);
+  background-color: var(--american_river);
 }
 
 footer {
-  padding: 50px 0px 50px 0px;
-  margin-top: 50px;
+  padding: 50px 50px;
+  margin-top: 100px;
+  width: 100vw
+}
+
+@media screen and (max-width: 1600px) {
+  
+  .barmenu {
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    gap: 5px;
+  }
+
+  .searchwrapper {
+    display: flex;
+    align-self: baseline;
+    padding: 10px 4px;
+  }
+
+  .wrapper h1, h2 {
+    font-size: 18px;
+    margin-bottom: 1px;
+  }
+
+}
+
+/* On screens that are 900px wide or less, the evrything will be responsive and aligned to center */
+@media screen and (max-width: 950px) {
+
+  body {
+    max-width: 100vw;
+  }
+
+  .container {
+    background-color: var(--midnite_blue_lite);
+    gap: 5px;
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px 15px rgba(0, 0, 0, 0.13);
+    margin: 20px;
+  }
+
+  .input__text {
+  padding-top: 35px;
+  padding-left: 2px;
+  }
+
+   .input__text input {
+  padding-left: 15px;
+  }
+
+  .images__row img {
+    justify-content: center;
+    height: 140px;
+    padding: 7px 7px;
+  
+  }
+
+  .singlecat img, .wrapper h1, h2 {
+    display: none;
+  }
+
+
 }
 
 

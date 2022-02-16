@@ -4,50 +4,42 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <!-- <link rel="stylesheet" media="screen and (min-width: 900px)" href="widescreen.css"> -->
-    <!-- <link rel="stylesheet" media="screen and (max-width: 600px)" href="smallscreen.css"> -->
-    <title>Funniest Videos</title>
+    <title>Funniest Cat Videos</title>
   </head>
-
-  <!-- still do not know how to make the search bar work so it does not do anything-->
   <body>
     <header>
       <div class="wrapper">
-        <h1><span>Funniest</span></h1>
-        <h2>Videos</h2>
+        <h1><span>Luna</span></h1>
+        <h2>Cat Videos</h2>
         <div class="searchwrapper">
-          <input
-            type="text"
-            id="search"
-            class="searchbar"
-            placeholder="Type to Search"
-          />
+          <input type="text" id="search" class="searchbar" placeholder="Type to Search"/>
         </div>
-        <!--Added icons to class="barmenu", and i did it using css to add icons by linking another css link to the <head> element called font awesome. Works nice and responsive as well.-->
-        <div class="barmenu">
-          <a href="#"><i class="fa fa-fw fa-home"></i>home</a>
-          <a href="#"><i class="fa fa-bars" aria-hidden="true"></i>contact</a>
-          <a href="#"><i class="fa fa-fw fa-user"></i>about</a>
+        <!--Added icons to class="barmenu", and i did it using css to add icons by linking another css link to the <head> element called font awesome ver: 4.7.0 - Works nice and responsive as well.-->
+          <div class="barmenu">
+            <a href="#"><i class="fa fa-fw fa-home"></i>HOME</a>
+            <a href="#"><i class="fa fa-bars" aria-hidden="true"></i>CONTACT</a>
+            <a href="#"><i class="fa fa-fw fa-user"></i>ABOUT</a>
+          </div>
         </div>
+      </header>
+      
+      <div class="singlecat">
+      <img src="./assets/img/Cat-transparent.png" alt="cat laying down"/>
       </div>
-    </header>
 
     <div class="container">
       <section class="columns__wrapper1">
         <h2>
-          <strong>Let's start with <em>Cat videos</em> because why not?</strong>
+          <strong>Welcome to Luna Cat Videos</strong>
         </h2>
       </section>
 
-      <br /><br />
-
       <!-- target="_blank" will open link on a new tab or window, all links point to youtube-->
-
       <div class="columns__wrapper3">
         <h3 id="top9videos">
           <strong>Our Top 9 Cat Videos</strong>
@@ -123,10 +115,6 @@
         </ol>
       </div>
       <br />
-
-      <div class="singlecat">
-        <img src="./assets/img/Cat-transparent.png" alt="cat laying down" />
-      </div>
       <div class="table2">
         <table>
           <tr>
@@ -216,7 +204,8 @@
 
       <div class="table">
         <img
-        src="./assets/img/ad-200x200.jpg" alt="your add here place holder image"/>
+          src="./assets/img/ad-200x200.jpg"
+          alt="your add here place holder image"/>
         <table>
           <tr>
             <th>Cats vs dogs</th>
@@ -290,52 +279,37 @@
           </tr>
         </table>
       </div>
-      <br /><br /><br />
 
-      <hr />
-      <br /><br />
+      <hr>
 
-      <div class="img-bottom">
-        <img src="./assets/img/Layer1.png" alt="Image of a cat"
-        />
-        <img
-          src="./assets/img/Layer2.png"
-          alt="image of a cat"
-        />
-        <img
-          src="./assets/img/Layer3.png"
-          alt="image of a cat and woman"
-        />
-        <img
-          src="./assets/img/Layer4.jpg"
-          alt="image of a cat"
-        />
+      <div class="images__row">
+        <img src="./assets/img/Layer1.png" alt="Image of a cat"/>
+        <img src="./assets/img/Layer2.png" alt="image of a cat"/>
+        <img src="./assets/img/Layer3.png" alt="image of a cat and woman"/>
+        <img src="./assets/img/Layer4.jpg" alt="image of a cat"/>
       </div>
-      <br /><br />
-
       <!--I need to figure out a way to have this input data sent to an email address 
            or somewhere where i can receive it from the user-->
-      <div class="column5">
-        <div class="column-5child1">
+      <div class="column5__wrapper">
+        <div class="column5__h2">
           <h2>Share a video with Us!</h2>
-          <br />
         </div>
-        <br />
-        <div class="column-5child2">
+        <div class="column5__h3">
           <p>
             Share your favorite videos with us by sending your video link
             bellow.
           </p>
         </div>
-        <br />
       </div>
-
-      <div class="summitbutton">
-        <input type="text" placeholder="Type Your Link" />
-        <br />
-        <input class="submit" type="submit" />
+      <div class="input__wrapper">
+        <div class="input__text">
+          <input type="text" placeholder="Type Your Link">
+        </div>
+        <div class="input__button">
+          <input type="submit" value="Send">
+        </div>
       </div>
     </div>
-    <footer class="footer">Yusuf | CSS / HTML | Practice CatSite 2022</footer>
+    <footer class="footer">Funniest Cat Videos 2022</footer>
   </body>
 </html>

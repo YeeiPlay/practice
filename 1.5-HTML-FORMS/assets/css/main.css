@@ -68,8 +68,14 @@ body {
     flex-direction: row-reverse;
     gap: 8px;
     justify-content: start;
-    align-items: baseline;
     -webkit-box-align: baseline;
+    font-size: 10px;
+}
+.check-group label {
+    font-size: 10px;
+}
+.check-group input {
+    width: 20px;
 }
 
 .form {
@@ -123,6 +129,15 @@ body {
 
     .form__form button {
         padding: 20px 26px;
+    }
+
+    .check-group input {
+        width: 45px;
+        -webkit-box-align: baseline;
+
+    }
+    .check-group label {
+        font-size: 10px;
     }
 }
 

@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 350px;
+    padding-left: 350px;
+    background-image: url("../img/super-mario.jpg"); 
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+
+@keyframes move-down {
+    from {top: -500px;}
+    to {top: 1px; background-color: rgba(44, 123, 160, 0.466); animation-timing-function: ease-in-out;}
+}
+
+/* I made class to practice abit of animation using css ONLY*/
+.animate-table {
+    animation-name: move-down;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    position: relative;
+    padding: 10px 25px;
+}
+
+.games {
+    background-color: rgba(255, 255, 255, 0.432);
+}
+
+h1 {
+    padding: 50px 0px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.games td, .games th {
+    padding: 14px;
+}
+
+/* even or add have different results on our table row */
+.games tr:nth-child(even){
+    background-color: rgb(224, 224, 224);
+}
+
+.games th {
+    color: white;
+    text-align: left;
+    background-color: rgb(78, 31, 31);
+}
+
+@media screen and (max-width: 1260px) {
+
+    main {
+        padding: 10px;
+    }
+ 
+    section, h1 {
+        font-size: small;
+        padding: 15px;
+    }
+
+    .animate-table {
+        font-size: smaller;
+        padding: 5px 10px;
+    }
+
+}
+

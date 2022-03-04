@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+    padding: 30px;
+}
+
+.App {
+    background-color: rgb(255, 255, 255);
+    border: solid 1px; color: rgb(64, 75, 80);
+    box-shadow: 10px 5px;
+    margin: 50px;
+    padding: 40px 40px;
+    height: 25vh;
+    width: 65vw;
+}
+
+
+div span {
+    color: rgb(61, 22, 190);
+}
+
+#btn {
+    position: absolute;
+    left: 95px;
+    top: 90px;
+    padding: 40px 40px;
+    background-color: rgb(64, 51, 248);
+    color: rgb(214, 214, 214);
+    font-size: 2.5rem;
+}
+
+div, #check__console {
+    color: rgb(61, 61, 61);
+}

@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Hex Codes: #fcc916, #2671b9, #76d2ea, #ee8301, #f9dce1, #664596 */
+:root {
+    --frontwindow1__car: #fcc916;    
+    --frontwindow1__car: #2671b9;    
+    --frontwindow1__car: #76d2ea;    
+    --frontwindow1__car: #ee8301;    
+    --frontwindow1__car: #f9dce1;    
+    --frontwindow1__car: #664596;
+    --frontwindow1__car: #9399a5 ;
+    
+    @keyframes rotate {
+      100% {
+          transform: rotate(360deg);
+      }
+    }
+}
+
+body {
+    width: 900px;
+    height: 400px;
+    background-color: #131313;
+    margin: auto;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.animate__car {
+    position: relative;
+    animation: car 2s infinite;
+  }
+  
+  @keyframes car {
+    100% {
+        transform:translateY(-1px); 
+    }
+
+    50% {
+        transform:translateY(1px);
+    }
+    
+    0%{
+        transform:translateY(-1px);
+    }
+   }
+  @keyframes wheels {
+    100% {
+        transform:translateY(-1px); 
+    }
+
+    50% {
+        transform:translateY(1px);
+    }
+    
+    0%{
+        transform:translateY(-1px);
+    }
+   }
+  
+  #wheels {
+      position: relative;
+      animation: wheels 2.7s infinite; 
+      left: -290px;
+      padding-top: 40px;
+
+  }
+  .wheel3 {
+      position: absolute;
+      animation: wheels 2.7s infinite; 
+      left: 693px;
+      bottom: 370px;
+      width: 90px;
+     
+  }
+  .wheel2 {
+      position: relative;
+      animation: wheels 2.7s infinite; 
+    
+
+  }
+
+  #gas {
+      text-align: center;
+      padding: 10px;
+      position: absolute;
+      z-index: 100;
+      top: 100px;
+    }
+    #gas:hover {
+        color: #00d640;
+    }
+    
+    @media only screen and (max-width:800px) {
+    /* For tablets: */
+    .animate__car {
+      width: 80%;
+      padding: 0;
+    }
+    .wheel3 {
+      left: 249px;
+      bottom: 293px;
+      width: 90px;
+    }
+    }
+    .wheel2 {
+      top: 144px;
+      right: 664px;
+      width: 90px;
+      animation: rotate;
+    }
+
+
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .container {
+      padding: 2px;
+      bottom: -230px;
+      margin-right: 560px
+      
+    }
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .animate__car {
+      width: 100%;
+      padding: 2px;
+      bottom: -330px;
+      margin-left: 200px;
+    }
+  }
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .wheel3 {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      
+    }
+  }
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .wheel2 {
+      
+        
+    }
+  }
+
+  @media only screen and (max-width:500px) {
+    #gas {
+        padding: 10px;
+        width: fit-content;
+        font-size: 70px;
+        background-color: #00d640;
+    }
+}

@@ -15,13 +15,13 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }
-
+/* This controls our first screen with (Open) button */
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 50vw;
+    width: 100vw;
     height: 80vh;
     padding-top: 20px;
     background-color: rgb(236, 236, 236);
@@ -32,18 +32,15 @@ body {
              0.3em 0.3em 1em rgba(0,0,0,0.3);
 }
 
-
-.container2 {
+/* Container two will be called from Javascript file after user clicks "OPEN" button */
+.container2 img {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    width: 60vw;
-    height: 80vh;
-    padding-top: 20px;
+    height: 400px;
+    width: 400px;
+    
 }
-
-
 
 #btn {
    padding: 10px;

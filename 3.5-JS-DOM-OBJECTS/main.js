@@ -1,7 +1,8 @@
 const element = document.querySelector(".images"); //dot for class... #for id
 const btn = document.querySelector("#btn");
-const container2 = document.querySelector(".container2")
-const container1 = document.querySelector(".container")
+const container2 = document.querySelector(".container2");
+const container1 = document.querySelector(".container");
+const btnhome = document.querySelector("#btnhome").style.visibility = 'hidden';
 const url = [
   "https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554_1280.jpg",
   "https://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492_1280.jpg",
@@ -18,26 +19,24 @@ function changeMe() {
     imgElement.src = url[i];
     element.appendChild(imgElement);
   }
-
-  
   //this will remove our button
-  {
-      btn.removeEventListener("click", changeMe);
-      if ((btn.removeEventListener = true)) {
-          btn.replaceWith("");
-        }
-    }
+  btn.removeEventListener("click", changeMe);
 }
 
 //We call the function above.
 btn.addEventListener("click", changeMe);
 
-// this function takes me to a new container .class no background
+// this function takes me to a new container style with no background
 function removebg() {
-    let container = container2;
-    container1.replaceWith(container2);
+  let container = container2;
+  container1.replaceWith(container2);
+
+  {
+    btnhome.style.visibility = visible
+
+  }
 }
+
 
 //calling function above
 btn.addEventListener("click", removebg);
-

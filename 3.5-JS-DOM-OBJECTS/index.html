@@ -8,22 +8,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button id="btnhome">go Back</button>
     <!-- This is the main container for the button -->
-    <div class="container">
-        <button id="btn"> OPEN </button>
-        <div class="h1">
+    <div class="containerOne">
+        <button id="btn"> Open </button>
+        <div class="headerOne">
             <h1>FREE CAT IMAGES</h1>
-            <SMall> Credit: <a href="https://pixabay.com" target="_blank"> Pixabay.com</SMall>
+            <small> Credit: <a href="https://pixabay.com" target="_blank"> Pixabay.com</small>
         </div>
-     <!-- Container number 2 is only for our Javascript imgs -->
-    <div class="container2">
-        <!-- Javascript will load my images bellow (from URLs)-->
-        <section class="images">
-        </section>
     </div>
-</div>
-<script src="main.js"></script>
-    
+        <!-- Container number 2 is only for our Javascript imgs -->
+        <button style="visibility: hidden;" id="btnhome">go Back</button>     
+    <section id="sectionHidden" style="visibility: hidden;">
+        <!-- Javascript will load my images bellow (from URLs)-->
+        <div class="images">
+
+        </div>
+    </section>
+    <script src="main.js"></script>
 </body>
 </html>

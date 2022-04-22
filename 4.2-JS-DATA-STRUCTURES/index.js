@@ -33,7 +33,7 @@ const updateDom = ()=> {
   } else {
     myResult.innerHTML = "";
   }
-}
+};
 
 updateDom()
 
@@ -44,7 +44,7 @@ const myFunc = () => {
   } else {
     humanList.style.visibility = "hidden";
   }
-}
+};
 
 for (let i = 0; i < humanArray.length; i++) {
   let firstName = humanArray[i].firstName;

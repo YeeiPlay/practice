@@ -1,6 +1,6 @@
 const names = ["Mike", "John", "Steve", "Carlos", "Matt", "Nicole", "Michelle"];
 //initial array no change yet
-console.log("Initial Array:", names);
+console.log("Initial Array:", names)
 
 //method will remove arrays's last item
 let removelastName = names.pop();
@@ -20,7 +20,7 @@ const firstItem = names[0];
 console.log("first item:", firstItem);
 
 //method to add item to end of list
-names.push("Yusuf-Al-Colocho")
+names.push("Yusuf-Al-Colocho");
 console.log("Push Method to end of array:", names);
 
 
@@ -35,11 +35,33 @@ const middleMan = Math.floor(names.length / 2);
 console.log("middle guy here:", names[middleMan]);
 
 // Higher Order Array //
+console.log("////////higher order Array /////////")
 const getYusuf = names.find((name) => {
   return name === "Yusuf"
 });
 
 console.log("FutureDev here:", getYusuf);
+const string = names.toString();
+console.log("to string method, ", string);
+
+const sliceMethod = names.join("-");
+console.log("joint Method; ", joinMethod);
+
+names.splice(0, 0, "new guy!");
+console.log("spliceMethods ", names);
+
+names.reverse(0, 0, "new guy!");
+console.log("reverseMethods ", names);
+
+const moreNames = ["Jason", "Lucas", "Mike"];
+const newArray = names.concat(moreNames);
+
+//New way to handle concat (spread operator)
+const easyWay = [...names, ...moreNames];
+
+const twoName = names.slice(0, 1);
+console.log("slice method", twoName);
+
 
 const contacts = [{
     name: "Steve",
@@ -61,7 +83,7 @@ const contacts = [{
 // checks for the first match or person over 30 years old and stop
 const firstOverThirty = contacts.find((person) => {
   return person.age > 30;
-});
+})
 console.log("First Mature and wise person:", firstOverThirty);
 
 // checks for everyone over 30 years old!
@@ -69,9 +91,9 @@ const allOverThirty = contacts.filter((person) => {
   return person.age > 30;
 });
 
-console.log("mature and wise person:", firstOverThirty);
+// console.log("mature and wise person:", firstOverThirty);
 
-console.log("mature and wise person:", allOverThirty);
+// console.log("mature and wise person:", allOverThirty);
 
 //Make everyone a year older than they are
 const makeThemOlder = contacts.map((person) => {
@@ -79,30 +101,24 @@ const makeThemOlder = contacts.map((person) => {
     name: person.name,
     age: person.age + 1
   }
+})
+
+const findMike = contacts.findIndex((person) =>{
+  return person.name === "mike"
 });
 
-console.log("Now everyone older by one year:", makeThemOlder);
+console.log("find index method", findMike)
 
-const div = document.getElementById("ul");
+const coolName = "Yusuf";
+console.log("every method:", everyMethod);
 
-const callApi = async () => {
-  try {
-    const response = await fetch("https://jasonplaceholder.typecode.com/posts/10");
-    const data = await response.json();
-    
-    for (let post of data) {
-      let h6 = document.createElement("h6");
-      let p = document.createElement("p");
-      h6.textContent = post.body;
-      p.textContent = post.body;
-      div.append(h6, p);
-    };
-  }
 
-  catch (error) { 
-    console.log(error);
-};
 
-};
+// console.log("this is the array after map:", contacts)
 
-callApi();
+// let newContacts = [...contacts];
+
+// for(let i = 0; i < newContacts.length; i++){
+//   let person = newContacts[i];
+//   person.name = "ken"
+// }
